@@ -11,7 +11,7 @@ const Aeiou = new Commando.Client({
 
 Aeiou.registry
 	.registerGroups([
-		['mod', 'Mod commands'],
+		['core', 'Core commands'],
 		['some', 'Some group'],
 		['other', 'Some other group'],
 	])
