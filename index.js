@@ -7,6 +7,7 @@ const Aeiou = new Commando.Client({
 	owner: '147604925612818432',
 	commandPrefix: '!',
 	unknownCommandResponse: false,
+	disableEveryone: true,
 });
 
 Aeiou.registry
@@ -15,9 +16,11 @@ Aeiou.registry
 		['some', 'Some group'],
 		['other', 'Some other group'],
 	])
-	.registerDefaults()
+	.registerDefaultTypes()
+	.registerDefaultGroups()
+	.registerDefaultCommands()
 	.registerCommandsIn(path.join(__dirname, 'commands'));
-
+a
 Aeiou.on('ready', () => {
 	console.log('lets do it');
 });
